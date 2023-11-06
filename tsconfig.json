@@ -1,0 +1,11 @@
+{
+  "include": ["./src/**/*", "./index.d.ts"],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "module": "esnext",
+    "moduleResolution": "Bundler",
+    "noEmit": true,
+    "strict": true
+  },
+  "exclude": ["node_modules", "**/node_modules/*"]
+}

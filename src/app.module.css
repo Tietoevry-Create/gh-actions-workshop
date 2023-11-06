@@ -1,0 +1,18 @@
+.gradientText {
+  --start-color: rebeccapurple;
+  --end-color: hotpink;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--start-color),
+    var(--end-color)
+  );
+}
+
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .gradientText {
+    color: transparent;
+  }
+}

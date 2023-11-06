@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;%EMOJI%&lt;/text&gt;&lt;/svg&gt;"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/@picocss/pico/css/pico.classless.min.css"
+    />
+    <title>GitHub Actions workshop</title>
+    <script>
+      const randomEmoji = getRandomEmoji();
+      setFavicon(randomEmoji);
+
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+          setFavicon("😴");
+        } else {
+          const randomEmoji = getRandomEmoji();
+          setFavicon(randomEmoji);
+        }
+      });
+
+      function getRandomEmoji() {
+        const emoji = [
+          "🐶",
+          "👹",
+          "🤓",
+          "🥳",
+          "😻",
+          "😀",
+          "😃",
+          "😄",
+          "😁",
+          "😆",
+          "😌",
+          "😊",
+          "😇",
+          "🙂",
+          "🙃",
+          "🥰",
+          "😍",
+          "🤩",
+          "😤",
+        ];
+
+        return emoji[Math.floor(Math.random() * emoji.length)];
+      }
+
+      function setFavicon(emoji) {
+        const faviconSvgTemplate = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">%EMOJI%</text></svg>`;
+        const faviconHrefTemplate = `data:image/svg+xml,${faviconSvgTemplate}`;
+
+        const favicon = document.querySelector("[rel=icon]");
+        favicon.href = faviconHrefTemplate.replace("%EMOJI%", emoji);
+      }
+    </script>
+    <script type="module" src="/src/index.tsx"></script>
+  </head>
+  <body></body>
+</html>
