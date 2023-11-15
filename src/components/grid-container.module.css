@@ -1,0 +1,8 @@
+.gridContainer {
+  display: grid;
+  gap: 0.25rem;
+  grid-template-columns: repeat(var(--col-count), 1fr);
+  margin: 0;
+  padding: 0;
+  width: 560px;
+}

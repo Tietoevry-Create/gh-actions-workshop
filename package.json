@@ -8,6 +8,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "license": "MIT",
+  "dependencies": {
+    "@dnd-kit/core": "^6.1.0",
+    "@dnd-kit/sortable": "^8.0.0",
+    "@picocss/pico": "^1.5.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
   "devDependencies": {
     "@types/react": "^18.2.35",
     "@types/react-dom": "^18.2.14",
@@ -17,10 +24,5 @@
     "typescript": "^5.2.2",
     "vite": "^4.5.0",
     "vitest": "^0.34.6"
-  },
-  "dependencies": {
-    "@picocss/pico": "^1.5.10",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
   }
 }

@@ -1,0 +1,115 @@
+@keyframes pop {
+  0% {
+    transform: scale(1);
+    box-shadow: var(--box-shadow);
+  }
+  100% {
+    transform: scale(var(--scale));
+    box-shadow: var(--box-shadow-picked-up);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.Wrapper {
+  box-sizing: border-box;
+  display: flex;
+  margin: 0;
+  touch-action: manipulation;
+  transform-origin: 0 0;
+  transform: translate3d(var(--translate-x, 0), var(--translate-y, 0), 0)
+    scaleX(var(--scale-x, 1)) scaleY(var(--scale-y, 1));
+
+  &.fadeIn {
+    animation: fadeIn 500ms ease;
+  }
+
+  &.dragOverlay {
+    --scale: 1.05;
+    --box-shadow-picked-up: -1px 0 15px 0 rgba(34, 33, 81, 0.01),
+      0px 15px 15px 0 rgba(34, 33, 81, 0.25);
+    z-index: 999;
+  }
+}
+
+.Item {
+  align-items: center;
+  background-color: transparent;
+  border-radius: calc(4px / var(--scale-x, 1));
+  border: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-grow: 1;
+  font-size: 1rem;
+  list-style: none;
+  outline: none;
+  padding: 18px 20px;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+  transform-origin: 50% 50%;
+  transform: scale(var(--scale, 1));
+  transition: box-shadow 200ms cubic-bezier(0.18, 0.67, 0.6, 1.22);
+  white-space: nowrap;
+
+  &:focus-visible {
+    box-shadow:
+      0 0px 4px 1px $focused-outline-color,
+      $box-shadow;
+  }
+
+  &:not(.withHandle) {
+    touch-action: manipulation;
+    cursor: grab;
+  }
+
+  &.dragging:not(.dragOverlay) {
+    opacity: var(--dragging-opacity, 0.5);
+    z-index: 0;
+  }
+
+  &.disabled {
+    color: #999;
+    background-color: #f1f1f1;
+    &:focus {
+      box-shadow:
+        0 0px 4px 1px rgba(0, 0, 0, 0.1),
+        $box-shadow;
+    }
+    cursor: not-allowed;
+  }
+
+  /* &.dragOverlay {
+    animation: pop 200ms cubic-bezier(0.18, 0.67, 0.6, 1.22);
+    box-shadow: var(--box-shadow-picked-up);
+    cursor: inherit;
+    opacity: 1;
+    transform: scale(var(--scale));
+  } */
+
+  &.color:before {
+    background-color: var(--color);
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+  }
+}
+
+.Image:not(.dragOverlay) {
+  background-image: url("https://picsum.photos/560/560");
+  background-position: calc(var(--x) * 25%) calc(var(--y) * 25%);
+  background-size: 731px;
+}

@@ -1,0 +1,7 @@
+.Wrapper {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem;
+  width: 100%;
+}

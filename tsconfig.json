@@ -5,7 +5,8 @@
     "module": "esnext",
     "moduleResolution": "Bundler",
     "noEmit": true,
-    "strict": true
+    "strict": true,
+    "noUnusedLocals": true
   },
   "exclude": ["node_modules", "**/node_modules/*"]
 }
