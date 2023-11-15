@@ -78,6 +78,9 @@ Because we're using a new event and not `pull_request` as before, we need to mak
 
 Another event that is useful is `schedule`.
 This lets us run a workflow on a schedule, for instance every day at 12:00.
+We use them to for instance run a workflow that checks for security vulnerabilities in our dependencies every day, or to run workflows that are very long-running and therefore can't be run on every pull request.
+They're also useful for fetching data from other sources once a day.
+
 Let's create a workflow that runs every five minutes (_which is the shortest time interval_) and prints out the current time.
 We'll use the CRON syntax to schedule the workflow.
 If you're not familiar with it, check out [crontab guru](https://crontab.guru/) to quickly create your own CRON expressions.

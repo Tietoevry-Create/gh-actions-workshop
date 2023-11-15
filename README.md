@@ -20,6 +20,16 @@ Typical use cases for GitHub Actions include:
 
 Ok, that's the introduction out of the way, let's get started!
 
+## What will we do in this workshop?
+
+The workshop consists of five main tasks:
+
+1. [Create a workflow](tasks/1/README.md)
+2. [Building code in a workflow](tasks/2/README.md)
+3. [Running multiple jobs](tasks/3/README.md)
+4. [Running jobs in parallel](tasks/4/README.md)
+5. [Using other events to run workflows](tasks/5/README.md)
+
 ## Prerequisites
 
 - A GitHub account
@@ -43,5 +53,3 @@ If you're doing things on <https://github.dev>:
 
 Now you're ready to go!
 Please proceed to [task 1](tasks/1/README.md).
-
-<!-- TODO: Add summary -->
