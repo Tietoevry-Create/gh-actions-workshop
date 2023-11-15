@@ -43,15 +43,9 @@ After checking out, we have to install our Node dependencies with `npm install` 
 `npm run build` will return a non-zero exit code if the build fails.
 The workflow picks that up and will fail the job.
 
-## 2.2 Fix the error in the code
+## 2.2 Add a PR rule to keep anyone from merging if the build fails
 
-Go to the [`src/index.tsx`](../../src/index.tsx) file and fix the error.
-There might be a line at the top that looks suspiciously wrongful.
-Commit the change and see that the workflow now runs successfully 🤩
-
-## 2.3 Add a PR rule to keep anyone from merging if the build fails
-
-We now have a workflow that runs our tests, but it's not very useful if we can still merge broken code.
+We now have a workflow that tries to build our code, but it's not very useful if we can still merge broken code.
 GitHub has a feature called "branch protection rules" that can be used to prevent merging code that doesn't pass the checks.
 Let's add a rule that prevents merging if the build fails.
 
@@ -61,6 +55,8 @@ Let's add a rule that prevents merging if the build fails.
 1. Under "Branch name pattern", enter `main`. If you have a different default branch, use that instead.
 1. Check the "Require status checks to pass before merging" checkbox and see that the box opens up
 1. Search for the workflow you created (`build`) and select it to make it required
+1. Click "Create" to create the rule
+1. Open the PR again and see that we can't merge it 😻
 
 Now the PR can't be merged until the build passes 🎉
 Other settings I usually add to my branch protection rules are:
@@ -68,5 +64,11 @@ Other settings I usually add to my branch protection rules are:
 - Require branches to be up to date before merging
 - Require conversation resolution before merging
 - Require deployments to succeed before merging (if we use GitHub deployments)
+
+## 2.3 Fix the error in the code
+
+Go to the [`src/index.tsx`](../../src/index.tsx) file and fix the error.
+There might be a line at the top that looks suspiciously wrongful.
+Commit the change and see that the workflow now runs successfully 🤩
 
 Ok nice, now the project builds! Let's move on to [task 3](../3/README.md) to run our tests.

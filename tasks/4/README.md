@@ -29,16 +29,11 @@ jobs:
         run: echo "Step 2"
 ```
 
-## Post a comment on the pull request when all jobs are finished
+## 4.1 Post a comment on the pull request when all jobs are finished
 
 If we take a look through the [GitHub Marketplace](https://github.com/marketplace?type=actions), we can see that there are thousands upon thousands of actions available for us to use.
 Some of these are created by GitHub themselves, some are created by other companies and some are created by individuals.
 Let's use [peter-evans/create-or-update-comment](https://github.com/marketplace/actions/create-or-update-comment) to post a comment to the PR once all jobs are finished.
-
-<!-- Some things that workflows can do need _permissions_.
-For instance, if we want to post a comment to a pull request, we need to have the `pull_requests: write` permission.
-There are many different permissions we need to give our jobs if we want them to perform certain actions, and we can see which permissions are required in the [documentation](https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs).
- -->
 
 Create a new job which uses the `peter-evans/create-or-update-comment` action:
 
@@ -63,4 +58,50 @@ jobs:
 ```
 
 Here we've used `github.event.pull_request.number` which is part of the context that is available to us.
-⚠️ Note that what event is used (in this case `pull_request`) determines what context is available.
+
+> **Note**
+> What event is used (in this case `pull_request`) determines what context is available.
+
+Run the workflow and see if it works.
+Doesn't it???
+Perhaps we'll have to do some debugging 🤔
+
+## 4.2 Debugging
+
+If we click the `details` link in the workflow run, we can see that the `post-comment` job is failing.
+What does the log say?
+It looks like some kind of permissions error, as we get a `RequestError [HttpError]: Resource not accessible by integration` error which is one of the least explanatory errors I know of.
+What's happening here?
+
+## 4.3 Adding permissions
+
+Some things that workflows can do need _permissions_.
+For instance, if we want to post a comment to a pull request in a _public repository_, we need to have the `pull-requests: write` permission.
+There are many different permissions we need to give our jobs if we want them to perform certain actions, and we can see which permissions are required in the [documentation](https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs).
+
+Permissions can be added to workflows or to jobs.
+In our case we only need to add permissions to the `post-comment` job, so let's do that:
+
+```diff
+post-comment:
+  runs-on: ubuntu-latest
+
++ permissions:
++   pull-requests: write
+
+needs: [job1, job2]
+
+steps:
+  - name: Post comment
+    uses: peter-evans/create-or-update-comment@v3
+    with:
+      issue-number: ${{ github.event.pull_request.number }}
+      body: |
+        All jobs have finished! 🎉
+```
+
+Now run the workflow again and see if it works.
+
+It did??
+You're learning fast! 🚀
+Now let's learn about other events in [task 5](../5/README.md)!
