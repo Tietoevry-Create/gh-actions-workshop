@@ -60,5 +60,8 @@ These can all be run with `npm run <script name>`:
 Create one job for each of these scripts (apart from `start` which will run the development server indefinitely).
 Now if we commit and see how the workflow runs, we can see that all jobs are run at the same time.
 
+If we open up the repository settings page again and take a look at our branch protection rule, we can now search for the new jobs we added.
+Jobs will show up in search after they've been run at least once.
+
 Did everything pass?
 If yes, move on to [task 4](../4/README.md)!
