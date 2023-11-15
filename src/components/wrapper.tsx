@@ -1,4 +1,4 @@
-import styles from "./Wrapper.module.css";
+import styles from "./wrapper.module.css";
 
 interface Props {
   children: React.ReactNode;
