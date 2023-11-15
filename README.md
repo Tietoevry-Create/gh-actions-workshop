@@ -28,7 +28,8 @@ The workshop consists of five main tasks:
 2. [Building code in a workflow](tasks/2/README.md)
 3. [Running multiple jobs](tasks/3/README.md)
 4. [Running jobs in parallel](tasks/4/README.md)
-5. [Using other events to run workflows](tasks/5/README.md)
+5. [Deploying to GitHub Pages](tasks/5/README.md)
+6. [Using other events to run workflows](tasks/6/README.md)
 
 ## Prerequisites
 

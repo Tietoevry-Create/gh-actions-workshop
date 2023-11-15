@@ -104,4 +104,4 @@ Now run the workflow again and see if it works.
 
 It did??
 You're learning fast! 🚀
-Now let's learn about other events in [task 5](../5/README.md)!
+Let's try deploying to production in [task 5](../5/README.md)!
