@@ -1,4 +1,4 @@
-# 4 Running jobs in parallel
+# 4 Running jobs in sequence
 
 As we learned in the previous task, we can run multiple jobs in parallel.
 Most jobs can be run at the same time, however in some cases jobs need to wait for each other to finish.

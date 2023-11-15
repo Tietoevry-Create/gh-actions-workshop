@@ -1,4 +1,4 @@
-# 3 Running multiple jobs
+# 3 Running multiple jobs in parallel
 
 In the previous task we created a workflow that runs a single job.
 Each step in a job is run in sequence:
