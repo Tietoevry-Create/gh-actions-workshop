@@ -2,7 +2,7 @@ import type { DraggableSyntheticListeners } from "@dnd-kit/core";
 import type { Transform } from "@dnd-kit/utilities";
 import { CSSProperties, forwardRef, memo, useEffect } from "react";
 import { classNames } from "../utils/class-names";
-import styles from "./Item.module.css";
+import styles from "./item.module.css";
 
 export interface Props {
   dragOverlay?: boolean;
