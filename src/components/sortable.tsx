@@ -181,7 +181,7 @@ type SortableItemProps = {
   id: number;
   index: number;
   useDragOverlay: boolean;
-  wrapperStyle(values: any): React.CSSProperties;
+  wrapperStyle(values: unknown): React.CSSProperties;
 };
 
 export function SortableItem({

@@ -48,3 +48,5 @@ The workflow picks that up and will fail the job.
 Go to the `src/index.tsx` file and fix the error.
 There might be a line at the top that looks suspiciously wrongful.
 Commit the change and see that the workflow now runs successfully 🤩
+
+Ok nice, now the project builds! Let's move on to [task 3](../3/README.md) to run our tests.
