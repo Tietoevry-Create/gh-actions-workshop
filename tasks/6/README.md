@@ -1,5 +1,17 @@
 # 6 Using other events
 
+<details>
+<summary>Navigation</summary>
+
+1. [Creating a workflow](./tasks/1/README.md)
+2. [Building code in a workflow](./tasks/2/README.md)
+3. [Running multiple jobs in parallel](./tasks/3/README.md)
+4. [Running jobs in sequence](./tasks/4/README.md)
+5. [Deploying to GitHub Pages](./tasks/5/README.md)
+6. **Using other events to run workflows** (this task)
+
+</details>
+
 There are looads of events we can use to trigger our workflows.
 We mostly use the `pull_request` event, as it makes the most sense when validating pull requests, but some times we use the others, which make a huge list:
 

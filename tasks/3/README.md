@@ -1,5 +1,17 @@
 # 3 Running multiple jobs in parallel
 
+<details>
+<summary>Navigation</summary>
+
+1. [Creating a workflow](./tasks/1/README.md)
+2. [Building code in a workflow](./tasks/2/README.md)
+3. **Running multiple jobs in parallel** (this task)
+4. [Running jobs in sequence](./tasks/4/README.md)
+5. [Deploying to GitHub Pages](./tasks/5/README.md)
+6. [Using other events to run workflows](./tasks/6/README.md)
+
+</details>
+
 In the previous task we created a workflow that runs a single job.
 Each step in a job is run in sequence:
 

@@ -1,5 +1,17 @@
 # 4 Running jobs in sequence
 
+<details>
+<summary>Navigation</summary>
+
+1. [Creating a workflow](./tasks/1/README.md)
+2. [Building code in a workflow](./tasks/2/README.md)
+3. [Running multiple jobs in parallel](./tasks/3/README.md)
+4. **Running jobs in sequence** (this task)
+5. [Deploying to GitHub Pages](./tasks/5/README.md)
+6. [Using other events to run workflows](./tasks/6/README.md)
+
+</details>
+
 As we learned in the previous task, we can run multiple jobs in parallel.
 Most jobs can be run at the same time, however in some cases jobs need to wait for each other to finish.
 For instance if we have a step that deploys the application, we might want to run end-to-end tests after the deployment has finished.

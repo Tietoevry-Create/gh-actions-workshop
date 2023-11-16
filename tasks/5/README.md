@@ -1,5 +1,17 @@
 # 5 Deploying to GitHub Pages
 
+<details>
+<summary>Navigation</summary>
+
+1. [Creating a workflow](./tasks/1/README.md)
+2. [Building code in a workflow](./tasks/2/README.md)
+3. [Running multiple jobs in parallel](./tasks/3/README.md)
+4. [Running jobs in sequence](./tasks/4/README.md)
+5. **Deploying to GitHub Pages** (this task)
+6. [Using other events to run workflows](./tasks/6/README.md)
+
+</details>
+
 GitHub Pages is GitHub's built-in static site hosting.
 It's not very often used in production, but it's great for hosting things like documentation, blogs, or even your own website.
 Even though it's not used that often, it's still a great way to learn how to deploy to a cloud service.

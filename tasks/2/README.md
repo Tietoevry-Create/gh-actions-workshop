@@ -1,5 +1,17 @@
 # 2 Creating the first workflow that actually does something
 
+<details>
+<summary>Navigation</summary>
+
+1. [Creating a workflow](./tasks/1/README.md)
+2. **Building code in a workflow** (this task)
+3. [Running multiple jobs in parallel](./tasks/3/README.md)
+4. [Running jobs in sequence](./tasks/4/README.md)
+5. [Deploying to GitHub Pages](./tasks/5/README.md)
+6. [Using other events to run workflows](./tasks/6/README.md)
+
+</details>
+
 In this project we have a simple web site.
 There's not much code in it, however I think there's a bug in it which has been merged to `main` by mistake.
 It seems that the project currently doesn't build correctly.

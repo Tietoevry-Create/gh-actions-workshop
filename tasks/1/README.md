@@ -1,5 +1,17 @@
 # 1 Your first task
 
+<details>
+<summary>Navigation</summary>
+
+1. **Creating a workflow** (this task)
+2. [Building code in a workflow](./tasks/2/README.md)
+3. [Running multiple jobs in parallel](./tasks/3/README.md)
+4. [Running jobs in sequence](./tasks/4/README.md)
+5. [Deploying to GitHub Pages](./tasks/5/README.md)
+6. [Using other events to run workflows](./tasks/6/README.md)
+
+</details>
+
 1. Create a new branch
 1. Create a new file in the `.github/workflows` directory. You can call it `pull-request.yml`
 1. Add the following content to the file:
