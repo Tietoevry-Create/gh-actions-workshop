@@ -22,7 +22,7 @@ If you already have some experience with GitHub Actions, feel free to skip ahead
 - A text editor (e.g. [Visual Studio Code](https://code.visualstudio.com/))
 - Knowledge of Git and Pull Requests are assumed
 
-If you don't want to use a text editor, it's possible to do everything on <https://github.dev>, which essentially is a web-based version of Visual Studio Code.
+If you don't want to use a text editor on your computer, it's possible to do everything on <https://github.dev>, which essentially is a web-based version of Visual Studio Code.
 
 ## What is GitHub Actions?
 
