@@ -70,7 +70,7 @@ Now if we commit and see how the workflow runs, we can see that all jobs are run
 If we open up the repository settings page again and take a look at our branch protection rule, we can now search for the new jobs we added.
 Jobs will show up in search after they've been run at least once.
 
-> [!INFO]
+> [!NOTE]
 > You could also add a job that runs the `format:check` script.
 > If you did, you would also need to format your workflow file by the rules set by Prettier.
 > That is not what we're learning right now, so we skipped it, but it's a good idea to do it in your own projects.
