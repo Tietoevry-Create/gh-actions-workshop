@@ -38,11 +38,11 @@ We can have as many jobs as we want and they will all run in parallel.
 Jobs are great for grouping up steps that are related to each other, and to otherwise keep the workflow file clean.
 They often can be run entire independently of each other, therefore making them great for parallelization.
 
-## 3.1 Test, lint and format
+## 3.1 Test and lint
 
 In the previous task, we learned how to build the project.
 We're still missing some safeguards though.
-We should run our unit tests, we should check that we have no linting errors (check that there are no mistakes that can lead to bugs) and we should check that our code is formatted correctly.
+We should run our unit tests, and we should check that we have no linting errors (check that there are no mistakes that can lead to bugs).
 
 We can see in the [`package.json`](../../package.json) file that we have a few `scripts` available.
 These can all be run with `npm run <script name>`:
@@ -57,8 +57,13 @@ These can all be run with `npm run <script name>`:
 }
 ```
 
-Create one job for each of these scripts (apart from `start` which will run the development server indefinitely).
+Create one job for the test script and one for the `lint:check` script.
+Remember: To run the scripts, type `npm run <script name>`.
 Now if we commit and see how the workflow runs, we can see that all jobs are run at the same time.
+
+> **Note**
+> If you get an error saying that `package.json` is not found, or that the `vitest` or `eslint` commands aren't found, remember that each job gets its own fresh virtual machine.
+> The latest version of Node and npm (and .NET and a few others) come pre-installed, but we need to both clone the repository and install dependencies before we can run the scripts, just as we did for the `build` job in the previous task.
 
 If we open up the repository settings page again and take a look at our branch protection rule, we can now search for the new jobs we added.
 Jobs will show up in search after they've been run at least once.

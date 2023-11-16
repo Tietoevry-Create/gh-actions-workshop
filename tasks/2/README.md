@@ -58,6 +58,11 @@ Let's add a rule that prevents merging if the build fails.
 1. Click "Create" to create the rule
 1. Open the PR again and see that we can't merge it 😻
 
+> **Note**
+> GitHub might display a message saying that the new branch protection rule isn't active because the repository is private.
+> Either make the repository public or ignore the message and go on.
+> You won't be stopped by the branch protection rule if the build is failing, but you will be able to do the rest of the tasks.
+
 Now the PR can't be merged until the build passes 🎉
 Other settings I usually add to my branch protection rules are:
 

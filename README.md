@@ -24,12 +24,12 @@ Ok, that's the introduction out of the way, let's get started!
 
 The workshop consists of five main tasks:
 
-1. [Create a workflow](tasks/1/README.md)
-2. [Building code in a workflow](tasks/2/README.md)
-3. [Running multiple jobs in parallel](tasks/3/README.md)
-4. [Running jobs in sequence](tasks/4/README.md)
-5. [Deploying to GitHub Pages](tasks/5/README.md)
-6. [Using other events to run workflows](tasks/6/README.md)
+1. [Create a workflow](./tasks/1/README.md)
+2. [Building code in a workflow](./tasks/2/README.md)
+3. [Running multiple jobs in parallel](./tasks/3/README.md)
+4. [Running jobs in sequence](./tasks/4/README.md)
+5. [Deploying to GitHub Pages](./tasks/5/README.md)
+6. [Using other events to run workflows](./tasks/6/README.md)
 
 ## Prerequisites
 
@@ -40,8 +40,10 @@ If you don't want to use a text editor, it's possible to do everything on <https
 
 ## 0 Getting started
 
-1. Click the "Use this template" button at the top of this repository to create a new repository from this template. If you need to decide, set your own user as the owner of the new repository.
-2. Call the repository `gh-actions-workshop`.
+1. Click the "Use this template" button at the top of this repository to create a new repository from this template.
+   If you need to decide, set your own user as the owner of the new repository.
+   ⚠️ It's best if your new repository is **`public`**, as one of the tasks requires it.
+2. Name the repository `gh-actions-workshop`.
 
 If you're doing things locally:
 

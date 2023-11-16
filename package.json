@@ -7,7 +7,9 @@
     "build": "vite build",
     "test": "vitest run",
     "lint:check": "eslint . --ext .ts,.tsx",
-    "format:check": "prettier --check ."
+    "lint:fix": "npm run lint:check -- --fix",
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write ."
   },
   "license": "MIT",
   "dependencies": {
