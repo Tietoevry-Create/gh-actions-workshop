@@ -45,7 +45,9 @@ Ok, that's the introduction out of the way, let's get started!
 
 1. Click the "Use this template" button at the top of this repository to create a new repository from this template.
    If you need to decide, set your own user as the owner of the new repository.
+
    ⚠️ It's best if your new repository is **`public`**, as one of the tasks requires it.
+
 2. Name the repository `gh-actions-workshop`.
 
 If you're doing things locally:
