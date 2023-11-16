@@ -3,9 +3,9 @@
 <details>
 <summary>Navigation</summary>
 
-1. [Creating a workflow](../1/README.md)
-2. [Building code in a workflow](../2/README.md)
-3. [Running multiple jobs in parallel](../3/README.md)
+1. ~~[Creating a workflow](../1/README.md)~~
+2. ~~[Building code in a workflow](../2/README.md)~~
+3. ~~[Running multiple jobs in parallel](../3/README.md)~~
 4. **Running jobs in sequence** (this task)
 5. [Deploying to GitHub Pages](../5/README.md)
 6. [Using other events to run workflows](../6/README.md)
