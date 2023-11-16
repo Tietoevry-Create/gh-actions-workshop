@@ -5,7 +5,7 @@ This workshop will teach you how to use GitHub Actions to automate your workflow
 
 ## What will we do in this workshop?
 
-The workshop consists of five main tasks:
+The workshop consists of six main tasks:
 
 1. [Create a workflow](./tasks/1/README.md)
 2. [Building code in a workflow](./tasks/2/README.md)
@@ -13,6 +13,8 @@ The workshop consists of five main tasks:
 4. [Running jobs in sequence](./tasks/4/README.md)
 5. [Deploying to GitHub Pages](./tasks/5/README.md)
 6. [Using other events to run workflows](./tasks/6/README.md)
+
+If you already have some experience with GitHub Actions, feel free to skip ahead to the task you're interested in.
 
 ## Prerequisites
 
