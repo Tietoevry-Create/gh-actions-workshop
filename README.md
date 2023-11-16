@@ -3,23 +3,6 @@
 Welcome to the GitHub Actions workshop!
 This workshop will teach you how to use GitHub Actions to automate your workflows.
 
-## What are GitHub Actions?
-
-GitHub Actions are a way to automate your workflows.
-Anything that needs to be done _every time something happens_ it typically a job for machines.
-GitHub Actions can trigger any time code changes, a pull request is opened, a new release is created, and more.
-You can even add a button in the GitHub UI to trigger a workflow manually.
-
-Typical use cases for GitHub Actions include:
-
-- Running tests
-- Building and deploying applications
-- Sending notifications
-- Creating releases
-- Checking for security vulnerabilities
-
-Ok, that's the introduction out of the way, let's get started!
-
 ## What will we do in this workshop?
 
 The workshop consists of five main tasks:
@@ -38,6 +21,23 @@ The workshop consists of five main tasks:
 - Knowledge of Git and Pull Requests are assumed
 
 If you don't want to use a text editor, it's possible to do everything on <https://github.dev>, which essentially is a web-based version of Visual Studio Code.
+
+## What are GitHub Actions?
+
+GitHub Actions are a way to automate your workflows.
+Anything that needs to be done _every time something happens_ it typically a job for machines.
+GitHub Actions can trigger any time code changes, a pull request is opened, a new release is created, and more.
+You can even add a button in the GitHub UI to trigger a workflow manually.
+
+Typical use cases for GitHub Actions include:
+
+- Running tests
+- Building and deploying applications
+- Sending notifications
+- Creating releases
+- Checking for security vulnerabilities
+
+Ok, that's the introduction out of the way, let's get started!
 
 ## 0 Getting started
 
