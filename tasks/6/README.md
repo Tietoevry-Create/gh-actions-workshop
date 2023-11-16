@@ -102,7 +102,7 @@ jobs:
         run: echo "The time is $(date)"
 ```
 
-> **Note**
+> [!IMPORTANT]
 > Be sure to remove this workflow when you're done with it, as it will run every minute forever and that's not very sustainable 🌱
 
 That's all there is to it!

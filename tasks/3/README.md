@@ -61,7 +61,7 @@ Create one job for the test script and one for the `lint:check` script.
 Remember: To run the scripts, type `npm run <script name>`.
 Now if we commit and see how the workflow runs, we can see that all jobs are run at the same time.
 
-> **Note**
+> [!TIP]
 > If you get an error saying that `package.json` is not found, or that the `vitest` or `eslint` commands aren't found, remember that each job gets its own fresh virtual machine.
 > The latest version of Node and npm (and .NET and a few others) come pre-installed, but we need to both clone the repository and install dependencies before we can run the scripts, just as we did for the `build` job in the previous task.
 

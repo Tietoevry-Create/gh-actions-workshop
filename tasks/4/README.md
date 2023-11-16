@@ -59,7 +59,7 @@ jobs:
 
 Here we've used `github.event.pull_request.number` which is part of the context that is available to us.
 
-> **Note**
+> [!IMPORTANT]
 > What event is used (in this case `pull_request`) determines what context is available.
 
 Run the workflow and see if it works.
