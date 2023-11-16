@@ -115,7 +115,7 @@ jobs:
 ```
 
 > [!IMPORTANT]
-> Be sure to remove this workflow when you're done with it, as it will run every minute forever and that's not very sustainable 🌱
+> Be sure to remove this workflow when you're done with it, as it will run every five minutes forever and that's not very sustainable 🌱
 
 That's all there is to it!
 You now know how to create a workflow, how to run jobs in parallel and in sequence, how to use external actions and how to use different events to trigger workflows.
