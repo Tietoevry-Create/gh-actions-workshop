@@ -42,10 +42,10 @@ They often can be run entire independently of each other, therefore making them 
 
 In the previous task, we learned how to build the project.
 We're still missing some safeguards though.
-We should run our unit tests, and we should check that we have no linting errors (check that there are no mistakes that can lead to bugs).
+We should run our unit tests, and we should check that we have no linting errors (i.e. check that there are no mistakes that can lead to bugs).
 
 We can see in the [`package.json`](../../package.json) file that we have a few `scripts` available.
-These can all be run with `npm run <script name>`:
+These can all be run with **`npm run <script name>`**:
 
 ```json
 "scripts": {
@@ -53,7 +53,9 @@ These can all be run with `npm run <script name>`:
   "build": "vite build",
   "test": "vitest run",
   "lint:check": "eslint . --ext .ts,.tsx",
-  "format:check": "prettier --check ."
+  "lint:fix": "npm run lint:check -- --fix",
+  "format:check": "prettier --check .",
+  "format:fix": "prettier --write ."
 }
 ```
 
@@ -67,6 +69,11 @@ Now if we commit and see how the workflow runs, we can see that all jobs are run
 
 If we open up the repository settings page again and take a look at our branch protection rule, we can now search for the new jobs we added.
 Jobs will show up in search after they've been run at least once.
+
+> [!INFO]
+> You could also add a job that runs the `format:check` script.
+> If you did, you would also need to format your workflow file by the rules set by Prettier.
+> That is not what we're learning right now, so we skipped it, but it's a good idea to do it in your own projects.
 
 Did everything pass?
 If yes, move on to [task 4](../4/README.md)!
