@@ -42,7 +42,7 @@ We mostly use the `pull_request` event, as it makes the most sense when validati
 
 Read more about them in [the documentation](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows).
 
-## 5.1 `workflow_dispatch`
+## 6.1 `workflow_dispatch`
 
 One of the events is `workflow_dispatch` which lets us trigger a workflow by the click of a button.
 This is useful for testing workflows, or for running workflows that are not triggered by an event, such as deploying to production.
@@ -74,7 +74,7 @@ Because we're using a new event and not `pull_request` as before, we need to mak
 1. Click it!!!
 1. Now see that a new run has been started and that it prints out `Hello 🌏!` in the logs
 
-## 5.2 `schedule`
+## 6.2 `schedule`
 
 Another event that is useful is `schedule`.
 This lets us run a workflow on a schedule, for instance every day at 12:00.
