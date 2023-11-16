@@ -15,7 +15,7 @@
 In this project we have a simple web site.
 There's not much code in it, however I think there's a bug in it which has been merged to `main` by mistake.
 It seems that the project currently doesn't build correctly.
-Let's create a workflow that will run our tests and check for this bug.
+Let's create a workflow that will try to build the project and fail if it can't.
 
 We'll use the `pull-request.yml` file from before, but keep in mind that the file name does not make a difference.
 Nevertheless, it's good practice to name your workflow files after the event that triggers them or what they do.
