@@ -3,7 +3,7 @@
 <details>
 <summary>Navigation</summary>
 
-1. [Creating a workflow](../1/README.md)
+1. ~~[Creating a workflow](../1/README.md)~~
 2. **Building code in a workflow** (this task)
 3. [Running multiple jobs in parallel](../3/README.md)
 4. [Running jobs in sequence](../4/README.md)
