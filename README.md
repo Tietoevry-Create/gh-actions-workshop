@@ -24,9 +24,9 @@ If you already have some experience with GitHub Actions, feel free to skip ahead
 
 If you don't want to use a text editor, it's possible to do everything on <https://github.dev>, which essentially is a web-based version of Visual Studio Code.
 
-## What are GitHub Actions?
+## What is GitHub Actions?
 
-GitHub Actions are a way to automate your workflows.
+GitHub Actions is a way to automate your workflows.
 Anything that needs to be done _every time something happens_ it typically a job for machines.
 GitHub Actions can trigger any time code changes, a pull request is opened, a new release is created, and more.
 You can even add a button in the GitHub UI to trigger a workflow manually.
