@@ -12,11 +12,12 @@ Opening up a large repository with many workflows can be intimidating, but we ho
 The workshop consists of six main tasks:
 
 1. [Creating a workflow](./tasks/1/README.md)
-2. [Building code in a workflow](./tasks/2/README.md)
-3. [Running multiple jobs in parallel](./tasks/3/README.md)
-4. [Running jobs in sequence](./tasks/4/README.md)
-5. [Deploying to GitHub Pages](./tasks/5/README.md)
-6. [Using other events to run workflows](./tasks/6/README.md)
+1. [Building code in a workflow](./tasks/2/README.md)
+1. [Running multiple jobs in parallel](./tasks/3/README.md)
+1. [Running jobs in sequence](./tasks/4/README.md)
+1. [Deploying to GitHub Pages](./tasks/5/README.md)
+1. [Using other events to run workflows](./tasks/6/README.md)
+1. [Outputs from steps and jobs](./tasks/7/README.md)
 
 If you already have some experience with GitHub Actions, feel free to skip ahead to the task you're interested in.
 
