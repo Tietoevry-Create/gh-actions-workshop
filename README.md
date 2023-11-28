@@ -17,7 +17,7 @@ The workshop consists of six main tasks:
 1. [Running jobs in sequence](./tasks/4/README.md)
 1. [Deploying to GitHub Pages](./tasks/5/README.md)
 1. [Using other events to run workflows](./tasks/6/README.md)
-1. [Outputs from steps and jobs](./tasks/7/README.md)
+1. [Outputting data from steps and jobs](./tasks/7/README.md)
 
 If you already have some experience with GitHub Actions, feel free to skip ahead to the task you're interested in.
 

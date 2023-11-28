@@ -10,7 +10,7 @@
 1. ~~[Deploying to GitHub Pages](../5/README.md)~~
 1. **Using other events to run workflows** (this task)
 1. [Outputs from steps and jobs](../7/README.md)
- 
+
 </details>
 
 There are looads of events we can use to trigger our workflows.

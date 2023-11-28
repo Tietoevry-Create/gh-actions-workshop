@@ -43,7 +43,7 @@ Because of the way that bash handles newlines, we need to use a slightly differe
 By adding a delimiter which is not used in the output, we can use `<<` to output everything until the delimiter to the output file.
 We'll end up with something like this:
 
-```
+```text
 {name}<<{delimiter}
 {value}
 {delimiter}
@@ -52,7 +52,7 @@ We'll end up with something like this:
 The delimiter `EOF` (End Of File) is commonly used, but you can use any string that is not used in the output.
 In the example below, we set an output with the key `json-output` to the JSON response from the World Time API:
 
-```yml
+```yaml
 steps:
   - name: Find the current time in Oslo
     run: |
@@ -177,6 +177,7 @@ jobs:
         with:
           urls: ${{ needs.deploy.outputs.page_url }}
 ```
+
 </details>
 
 After running this workflow, you should be able to see the Lighthouse checks in the GitHub UI.
