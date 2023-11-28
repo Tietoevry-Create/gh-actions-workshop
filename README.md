@@ -9,7 +9,7 @@ Opening up a large repository with many workflows can be intimidating, but we ho
 
 ## What will we do in this workshop?
 
-The workshop consists of six main tasks:
+The workshop consists of eight main tasks:
 
 1. [Creating a workflow](./tasks/1/README.md)
 1. [Building code in a workflow](./tasks/2/README.md)
