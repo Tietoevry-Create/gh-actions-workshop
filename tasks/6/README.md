@@ -10,6 +10,7 @@
 1. ~~[Deploying to GitHub Pages](../5/README.md)~~
 1. **Using other events to run workflows** (this task)
 1. [Outputs from steps and jobs](../7/README.md)
+1. [Keeping dependencies up to date with Dependabot](../8/README.md)
 
 </details>
 
@@ -118,20 +119,4 @@ jobs:
 > [!IMPORTANT]
 > Be sure to remove this workflow when you're done with it, as it will run every five minutes forever and that's not very sustainable 🌱
 
-That's all there is to it!
-You now know how to create a workflow, how to run jobs in parallel and in sequence, how to use external actions and how to use different events to trigger workflows.
-You're now ready to start creating your own workflows!
-
-## What's next?
-
-What you haven't yet learned is how to…
-
-- output data from a step or job
-- use environment variables
-- use caching to speed up workflows
-- use matrix builds to run the same job multiple times with different inputs
-- use artifacts to pass data between jobs
-- use the `if` keyword to conditionally run steps or jobs
-
-The workshop might be expanded in the future to include these topics, but for now you'll have to learn them on your own.
-I believe in you 🕊️
+The [next step](../7/README.md) is to learn about outputs from steps and jobs.

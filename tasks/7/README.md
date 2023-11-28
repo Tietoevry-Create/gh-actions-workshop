@@ -10,6 +10,7 @@
 1. ~~[Deploying to GitHub Pages](../5/README.md)~~
 1. ~~[Using other events to run workflows](../6/README.md)~~
 1. **Outputs from steps and jobs** (this task)
+1. [Keeping dependencies up to date with Dependabot](../8/README.md)
 
 </details>
 
@@ -181,3 +182,5 @@ jobs:
 </details>
 
 After running this workflow, you should be able to see the Lighthouse checks in the GitHub UI.
+
+In [the next step](../8/README.md), we'll learn about Dependabot and how to use it to keep our dependencies up to date.
