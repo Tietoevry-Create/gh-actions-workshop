@@ -10,6 +10,7 @@
 1. [Deploying to GitHub Pages](../5/README.md)
 1. [Using other events to run workflows](../6/README.md)
 1. [Outputs from steps and jobs](../7/README.md)
+1. [Keeping dependencies up to date with Dependabot](../8/README.md)
 
 </details>
 
