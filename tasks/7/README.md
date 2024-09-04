@@ -154,7 +154,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install dependencies
-        run: npm ci  
+        run: npm ci
 
       - name: Build application
         run: npm run build
