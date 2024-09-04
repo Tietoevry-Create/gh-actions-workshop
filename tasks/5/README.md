@@ -23,7 +23,7 @@ Even though it's not used that often, it's still a great way to learn how to dep
 To deploy to GitHub Pages from GitHub Actions, we first need to configure the repository.
 
 1. Go to the repository settings on <https://github.com/[your-username]/gh-actions-workshop/settings/pages>
-2. Under "Build and deployment" → "Source", select "GitHub Actions"
+1. Under "Build and deployment" → "Source", select "GitHub Actions"
 
 ## 5.2 Creating a workflow that deploys to GitHub Pages
 
