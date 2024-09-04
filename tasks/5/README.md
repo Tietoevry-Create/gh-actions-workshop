@@ -23,7 +23,7 @@ Even though it's not used that often, it's still a great way to learn how to dep
 To deploy to GitHub Pages from GitHub Actions, we first need to configure the repository.
 
 1. Go to the repository settings on <https://github.com/[your-username]/gh-actions-workshop/settings/pages>
-2. Under "Build and deployment" -> "Source", select "GitHub Actions"
+2. Under "Build and deployment" → "Source", select "GitHub Actions"
 
 ## 5.2 Creating a workflow that deploys to GitHub Pages
 
@@ -33,11 +33,11 @@ The new workflow should be triggered on `push` to the `main` branch, as this is 
 
 We need to set a few permissions to be able to read the repository and deploy to GitHub Pages:
 
-| Permission        | Description                     |
-| ----------------- | ------------------------------- |
-| `contents: read`  | To read the repository contents |
-| `pages: write`    | To deploy to GitHub Pages       |
-| `id-token: write` | To create a deployment status   |
+| Permission        | Description                                                    |
+| ----------------- | -------------------------------------------------------------- |
+| `contents: read`  | To read the repository contents                                |
+| `pages: write`    | To deploy to GitHub Pages                                      |
+| `id-token: write` | To verify the deployment originates from an appropriate source |
 
 1. Create a new job called `deploy` that runs on `ubuntu-latest`
 1. In the steps, check out the code, install dependencies and build the project as before
