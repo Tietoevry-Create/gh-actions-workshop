@@ -21,7 +21,7 @@
    ```yaml
    # Workflow names are optional, but should be provided.
    # They are displayed on GitHub when the action is run.
-   name: Hello world
+   name: Hello world ✨
 
    # The `on` property configures the events that will trigger the workflow.
    # In our case we want it to run when the `pull_request` event is triggered.
@@ -37,7 +37,7 @@
      hello_world_job:
        # As with workflow names (and even step names), job names are not
        # strictly required, but they are good practice.
-       name: Hello world
+       name: Hello world 🌱
 
        # There are many virtual machines we can run our jobs on. The most
        # common one is `ubuntu-latest`. See this page for a full list of
@@ -46,7 +46,7 @@
 
        # Each job can have multiple steps. These will be run in sequence.
        steps:
-         - name: Hello world action step
+         - name: Print message to terminal
            run: echo "Hello 🌏!"
    ```
 
