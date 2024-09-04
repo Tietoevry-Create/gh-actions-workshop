@@ -123,7 +123,7 @@ Previously we had the following steps in our deploy job:
 
 - name: Deploy to GitHub Pages
   id: deployment
-  uses: actions/deploy-pages@v2
+  uses: actions/deploy-pages@v4
 ```
 
 If we take a look at the [`actions/deploy-pages` documentation](https://github.com/actions/deploy-pages), we can see that it has an output called `page_url`.
@@ -167,7 +167,7 @@ jobs:
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
 
   lighthouse:
     runs-on: ubuntu-latest
