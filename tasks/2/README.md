@@ -29,13 +29,13 @@ Before we can do that, we'll need to make sure that the repository code is check
 After checking out, we have to install our Node dependencies with `npm install` (or `npm ci` which is a slightly better way to install dependencies in workflows).
 
 1. In your workflow file, add a new **job** called `build` that runs on `ubuntu-latest`
-1. In the first **step**, use the external workflow `actions/checkout@v3` to check out the repository:
+1. In the first **step**, use the external workflow `actions/checkout@v4` to check out the repository:
 
    ```yaml
    - name: Checkout repository
      # To reference external workflows, we use the `uses` keyword.
      # The thing after the `@` is the version of the workflow, and is a Git tag.
-     uses: actions/checkout@v3
+     uses: actions/checkout@v4
    ```
 
 1. Add a new step that installs the dependencies:

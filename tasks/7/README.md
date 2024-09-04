@@ -107,7 +107,7 @@ Previously we had the following steps in our deploy job:
 
 ```yaml
 - name: Checkout code
-  uses: actions/checkout@v3
+  uses: actions/checkout@v4
 
 - name: Build application
   run: npm run build
@@ -151,7 +151,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Build application
         run: npm run build
