@@ -40,7 +40,8 @@
        name: Hello world
 
        # There are many virtual machines we can run our jobs on. The most
-       # common one is `ubuntu-latest`.
+       # common one is `ubuntu-latest`. See this page for a full list of
+       # officially supported runners: https://github.com/actions/runner-images
        runs-on: ubuntu-latest
 
        # Each job can have multiple steps. These will be run in sequence.
