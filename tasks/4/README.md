@@ -64,7 +64,7 @@ jobs:
 
     steps:
       - name: Post comment
-        uses: peter-evans/create-or-update-comment@v3
+        uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: ${{ github.event.pull_request.number }}
           body: |
@@ -107,7 +107,7 @@ needs: [job1, job2]
 
 steps:
   - name: Post comment
-    uses: peter-evans/create-or-update-comment@v3
+    uses: peter-evans/create-or-update-comment@v4
     with:
       issue-number: ${{ github.event.pull_request.number }}
       body: |
