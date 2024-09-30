@@ -1,3 +1,5 @@
+extends: markdownlint/style/relaxed
+
 # Line length
 MD013: false
 
