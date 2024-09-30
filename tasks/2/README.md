@@ -15,7 +15,7 @@
 </details>
 
 In this project we have a simple web site.
-There's not much code in it, however I think there's a bug in it which has been merged to `main` by mistake.
+There's not much code in it, however I think there's a bug in it which has been merged to `main` by accident.
 It seems that the project currently doesn't build correctly.
 Let's create a workflow that will try to build the project and fail if it can't.
 
