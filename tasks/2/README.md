@@ -34,7 +34,8 @@ After checking out, we have to install our Node dependencies with `npm install` 
    ```yaml
    - name: Checkout repository
      # To reference external workflows, we use the `uses` keyword.
-     # The thing after the `@` is the version of the workflow, and is a Git tag.
+     # The thing after the `@` is the version of the workflow, and
+     # references a Git tag.
      uses: actions/checkout@v4
    ```
 
