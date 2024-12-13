@@ -93,7 +93,7 @@ Some things that workflows can do need _permissions_.
 For instance, if we want to post a comment to a pull request in a _public repository_, we need to have the `pull-requests: write` permission.
 There are many different permissions we need to give our jobs if we want them to perform certain actions, and we can see which permissions are required in the [documentation](https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs).
 
-Permissions can be added to workflows or to jobs.
+Permissions can be added to workflows or to jobs. Best practices is to use as little as possible.
 In our case we only need to add permissions to the `post-comment` job, so let's do that:
 
 ```diff
