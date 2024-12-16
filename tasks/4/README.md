@@ -11,6 +11,7 @@
 1. [Using other events to run workflows](../6/README.md)
 1. [Outputs from steps and jobs](../7/README.md)
 1. [Keeping dependencies up to date with Dependabot](../8/README.md)
+1. [Advanced topics](../9/README.md)
 
 </details>
 
@@ -94,6 +95,7 @@ For instance, if we want to post a comment to a pull request in a _public reposi
 There are many different permissions we need to give our jobs if we want them to perform certain actions, and we can see which permissions are required in the [documentation](https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs).
 
 Permissions can be added to workflows or to jobs.
+Best practices is to use as little as possible.
 In our case we only need to add permissions to the `post-comment` job, so let's do that:
 
 ```diff

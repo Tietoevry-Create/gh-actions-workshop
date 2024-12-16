@@ -57,10 +57,14 @@ You're now ready to start creating your own workflows!
 What you haven't yet learned is how to…
 
 - use environment variables
+- use inputs when running jobs manually
 - use caching to speed up workflows
 - use matrix builds to run the same job multiple times with different inputs
 - use artifacts to pass data between jobs
 - use the `if` keyword to conditionally run steps or jobs
+- use GitHub Secrets
+- learn about security practices
 
-The workshop might be expanded in the future to include these topics, but for now you'll have to learn them on your own.
+You can find some of these topics introduced in the [next task for advanced experiments](../9/README.md).
+This workshop might be expanded in the future to include these topics, but for now you'll have to learn them on your own.
 I believe in you 🕊️

@@ -11,6 +11,7 @@
 1. ~~[Using other events to run workflows](../6/README.md)~~
 1. **Outputs from steps and jobs** (this task)
 1. [Keeping dependencies up to date with Dependabot](../8/README.md)
+1. [Advanced topics](../9/README.md)
 
 </details>
 
