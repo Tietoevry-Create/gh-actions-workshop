@@ -1,6 +1,5 @@
 # 9 Some more advanced topics
 
-
 <details>
 <summary>Navigation</summary>
 
@@ -26,19 +25,19 @@ Let's start by creating a new workflow `advanced.yaml`.
 name: Advanced topics
 
 on:
-    workflow_dispatch:
-      inputs:
-        message:
-          type: string
-          description: Input your message
+  workflow_dispatch:
+    inputs:
+      message:
+        type: string
+        description: Input your message
 
 jobs:
-    hello_message_job:
-      name: Hello message
-      runs-on: ubuntu-latest
-      steps:
-        - name: Print message to terminal
-          run: echo "Hello ${{ inputs.message }}!"
+  hello_message_job:
+    name: Hello message
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print message to terminal
+        run: echo "Hello ${{ inputs.message }}!"
 ```
 
 Now, navigate to the job's page on GitHub, i.e. `https://github.com/[your-username]/gh-actions-workshop/actions/workflows/advanced.yaml`
@@ -56,16 +55,16 @@ Obviously, free text inputs can be **very dangerous**, we'll get back to some of
 Let's add another input of type `choice`.
 
 ```yaml
-      inputs:
-        message:
-          type: string
-          description: Input your message
-        lang_selector:
-          type: choice
-          description: Choose your language
-          options:
-            - English
-            - Norsk
+inputs:
+  message:
+    type: string
+    description: Input your message
+  lang_selector:
+    type: choice
+    description: Choose your language
+    options:
+      - English
+      - Norsk
 ```
 
 And then we duplicate our job and rename them to `hello_english_job` and `hello_norsk_job`.
@@ -80,12 +79,10 @@ jobs:
   hello_english_job:
     if: inputs.lang_selector == 'English'
     name: Hilsen norsk
-
-...
-
-  hello_norsk_job:
-    if: inputs.lang_selector == 'Norsk'
-    name: Hilsen norsk
+---
+hello_norsk_job:
+  if: inputs.lang_selector == 'Norsk'
+  name: Hilsen norsk
 ```
 
 Of course, the conditions could be much more advanced.
@@ -123,12 +120,11 @@ You then use the environment variable just as you would in any regular shell scr
 We'll be doing it on the step level, as such
 
 ```yaml
-    steps:
-    - name: Print message to terminal
-      run: echo "Hei ${MESSAGE}!"
-      env:
-        MESSAGE: ${{ inputs.message }}
+steps:
+  - name: Print message to terminal
+    run: echo "Hei ${MESSAGE}!"
+    env:
+      MESSAGE: ${{ inputs.message }}
 ```
 
 You'll notice that also zizmor is happy now.
-
