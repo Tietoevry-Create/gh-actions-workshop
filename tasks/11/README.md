@@ -31,10 +31,10 @@ It contains detailed information about all the features and concepts we've cover
 [`act`](https://github.com/nektos/act) lets you run your GitHub Actions locally.
 This is useful for testing your workflows before pushing changes to your repository.
 
-## GitHub Actions Marketplace
+## `actionlint`
 
-The [GitHub Actions Marketplace](https://github.com/marketplace) is a collection of actions that you can use in your workflows.
-You can find actions for various tasks, such as building, testing, and deploying your code.
+[`actionlint`](https://github.com/rhysd/actionlint) is a GitHub Actions workflow file linter.
+It checks your workflow files for syntax errors and other issues.
 
 ## More topics
 
