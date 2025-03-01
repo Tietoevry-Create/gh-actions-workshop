@@ -11,7 +11,8 @@
 1. **Using other events to run workflows** (this task)
 1. [Outputs from steps and jobs](../7/README.md)
 1. [Keeping dependencies up to date with Dependabot](../8/README.md)
-1. [Advanced topics](../9/README.md)
+1. [Matrices](../9/README.md)
+1. [Workflow dispatch inputs and security verification](../10/README.md)
 
 </details>
 

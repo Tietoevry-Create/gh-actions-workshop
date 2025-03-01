@@ -1,4 +1,4 @@
-# 9 Some more advanced topics
+# 9 Matrices
 
 <details>
 <summary>Navigation</summary>
@@ -11,120 +11,78 @@
 1. ~~[Using other events to run workflows](../6/README.md)~~
 1. ~~[Outputs from steps and jobs](../7/README.md)~~
 1. ~~[Keeping dependencies up to date with Dependabot](../8/README.md)~~
-1. **Advanced topics** (this task)
+1. **Matrices** (this task)
+1. [Workflow dispatch inputs and security verification](../10/README.md)
 
 </details>
 
-In this chapter we'll try out a few advanced topics.
+## 9.1 Using a matrix
 
-## 9.1 String inputs
+Sometimes we need to build our code on different operating systems or with different versions of a programming language.
+Creating a new job for each combination would be repetitive.
+Instead, we can use a matrix to define the different combinations.
 
-Let's start by creating a new workflow `advanced.yaml`.
+To use a matrix, we define a `strategy` in our job.
+The `matrix` key contains a list of keys and values.
+Each key is a variable name, and each value is a list of possible values for that variable.
+The job will run once for each combination of values.
+
+Let's create a new workflow `matrix.yaml`:
 
 ```yaml
-name: Advanced topics
+name: Matrices
 
-on:
-  workflow_dispatch:
-    inputs:
-      message:
-        type: string
-        description: Input your message
+on: push
 
 jobs:
-  hello_message_job:
-    name: Hello message
-    runs-on: ubuntu-latest
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+
+    runs-on: ${{ matrix.os }}
+
     steps:
-      - name: Print message to terminal
-        run: echo "Hello ${{ inputs.message }}!"
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Run build script
+        run: echo "Building on ${{ matrix.os }}"
 ```
 
-Now, navigate to the job's page on GitHub, i.e. `https://github.com/[your-username]/gh-actions-workshop/actions/workflows/advanced.yaml`
+## 9.2 Multiple variables
 
-On the top right you'll find the "Run workflow" button, where you can enter your message.
-You'll see that it prints your message.
-
-There are other input types, such as `choice`, `boolean`, and `environment`.
-We will make use of a `choice` in the next section.
-
-Obviously, free text inputs can be **very dangerous**, we'll get back to some of this in a moment.
-
-## 9.2 Conditionals
-
-Let's add another input of type `choice`.
+We can also define multiple variables in our matrix.
+This is useful when we want to test different versions of a programming language on different operating systems.
+Let's create a new workflow `matrix-multiple.yaml`:
 
 ```yaml
-inputs:
-  message:
-    type: string
-    description: Input your message
-  lang_selector:
-    type: choice
-    description: Choose your language
-    options:
-      - English
-      - Norsk
-```
+name: Matrices with multiple variables
 
-And then we duplicate our job and rename them to `hello_english_job` and `hello_norsk_job`.
-And for the second one, replace the "Hello" in the message by "Hei".
+on: push
 
-Finally, we want to only show the greeting in the language selected.
-
-To do this, we can add an `if` clause to the job.
-
-```yaml
 jobs:
-  hello_english_job:
-    if: inputs.lang_selector == 'English'
-    name: Hilsen norsk
----
-hello_norsk_job:
-  if: inputs.lang_selector == 'Norsk'
-  name: Hilsen norsk
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+        node-version: [14, 16]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Run build script
+        run: echo "Building on ${{ matrix.os }} with Node.js ${{ matrix.node-version }}"
 ```
 
-Of course, the conditions could be much more advanced.
-
-## 9.3 Security considerations
-
-In the above workflow, we are simply taking the input and writing it back out without any checks.
-
-Install the tool [zizmor](https://github.com/woodruffw/zizmor)
-by following [the instructions](https://woodruffw.github.io/zizmor/installation/).
-
-Then run it against our workflow file.
-
-You should get two errors similar to
-
-```text
-error[template-injection]: code injection via template expansion
-  --> /[my/user/path]/gh-actions-workshop/.github/workflows/advanced.yaml:24:7
-   |
-24 |     - name: Print message to terminal
-   |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ this step
-25 |       run: echo "Hello ${{ inputs.message }}!"
-   |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ inputs.message may expand into attacker-controllable code
-   |
-   = note: audit confidence → Low
-```
-
-The recommended way to mitigate is to first set the "message" as an environment variable and then use that environment variable inside the run statement.
-This will cause some sanitation being run on the value.
-
-To set an environment variable, you can define an `env:` block on the level you want to define it.
-That can be the entire workflow, a complete job or an individual step.
-You then use the environment variable just as you would in any regular shell script.
-
-We'll be doing it on the step level, as such
-
-```yaml
-steps:
-  - name: Print message to terminal
-    run: echo "Hei ${MESSAGE}!"
-    env:
-      MESSAGE: ${{ inputs.message }}
-```
-
-You'll notice that also zizmor is happy now.
+In this example, we have 3 different operating systems and 2 different versions of Node.js.
+The job will in total be run 6 times, once for each combination of operating system and Node.js version.
+To verify this, try to run it and see how many jobs are created in the Actions tab.
