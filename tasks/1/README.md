@@ -14,6 +14,21 @@
 
 </details>
 
+## Introduction
+
+Your first task will be to create a simple workflow that prints a message to the terminal.
+This will help you get familiar with the basic structure of a workflow file.
+
+Workflow files reside within the `.github/workflows` directory.
+They have a `name`, one or more triggers (`on`) and `jobs` which will run when the event triggers.
+
+## Goals
+
+- Create a new workflow
+- Print a message to the terminal
+
+## Steps
+
 1. Create a new branch
 1. Create a new file in the `.github/workflows` directory (it's important to spell the directory names correctly). You can call it `pull-request.yml`
 1. Add the following content to the file:
