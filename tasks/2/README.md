@@ -15,10 +15,11 @@
 
 </details>
 
-In this project we have a simple web site.
-There's not much code in it, however I think there's a bug in it which has been merged to `main` by accident.
+Within this project there is a simple web site.
+There's not much code in it, however I think there's a bug in it which has been commited to `main` by accident.
 It seems that the project currently doesn't build correctly.
 Let's create a workflow that will try to build the project and fail if it can't.
+This is similar to how you would set up a CI workflow in a real project and verify that the code actually builds.
 
 We'll use the `pull-request.yml` file from before, but keep in mind that the file name does not make a difference.
 Nevertheless, it's good practice to name your workflow files after the event that triggers them or what they do.
