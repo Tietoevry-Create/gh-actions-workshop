@@ -13,6 +13,8 @@
 1. [Keeping dependencies up to date with Dependabot](../8/README.md)
 1. [Matrices](../9/README.md)
 1. [Workflow dispatch inputs and security verification](../10/README.md)
+1. [Learn more about GitHub Actions](../11/README.md)
+
 
 </details>
 
