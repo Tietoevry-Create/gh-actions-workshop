@@ -56,6 +56,10 @@ We can have as many jobs as we want and they will all run in parallel.
 Jobs are great for grouping up steps that are related to each other, and to otherwise keep the workflow file clean.
 They often can be run entire independently of each other, therefore making them great for parallelization.
 
+> [!TIP]
+> Each job has its own fresh virtual machine, so they don't share any state.
+> This means that you need to check out the repository and install dependencies for each job, even if they're within the same workflow file.
+
 ## 3.1 Test and lint
 
 In the previous task, we learned how to build the project.
