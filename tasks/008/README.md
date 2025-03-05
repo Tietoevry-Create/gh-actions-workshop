@@ -3,17 +3,17 @@
 <details>
 <summary>Navigation</summary>
 
-1. ~~[Creating a workflow](../1/README.md)~~
-1. ~~[Building code in a workflow](../2/README.md)~~
-1. ~~[Running multiple jobs in parallel](../3/README.md)~~
-1. ~~[Running jobs in sequence](../4/README.md)~~
-1. ~~[Deploying to GitHub Pages](../5/README.md)~~
-1. ~~[Using other events to run workflows](../6/README.md)~~
-1. ~~[Outputs from steps and jobs](../7/README.md)~~
+1. ~~[Creating a workflow](../001/README.md)~~
+1. ~~[Building code in a workflow](../002/README.md)~~
+1. ~~[Running multiple jobs in parallel](../003/README.md)~~
+1. ~~[Running jobs in sequence](../004/README.md)~~
+1. ~~[Deploying to GitHub Pages](../005/README.md)~~
+1. ~~[Using other events to run workflows](../006/README.md)~~
+1. ~~[Outputs from steps and jobs](../007/README.md)~~
 1. **Keeping dependencies up to date with Dependabot** (this task)
-1. [Matrices](../9/README.md)
-1. [Workflow dispatch inputs and security verification](../10/README.md)
-1. [Learn more about GitHub Actions](../11/README.md)
+1. [Matrices](../009/README.md)
+1. [Workflow dispatch inputs and security verification](../010/README.md)
+1. [Learn more about GitHub Actions](../011/README.md)
 
 
 </details>
@@ -69,6 +69,6 @@ What you haven't yet learned is how to…
 - use GitHub Secrets
 - learn about security practices
 
-You can find some of these topics introduced in the [next task for advanced experiments](../9/README.md).
+You can find some of these topics introduced in the [next task for advanced experiments](../009/README.md).
 This workshop might be expanded in the future to include these topics, but for now you'll have to learn them on your own.
 I believe in you 🕊️

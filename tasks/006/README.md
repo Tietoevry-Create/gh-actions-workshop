@@ -3,17 +3,17 @@
 <details>
 <summary>Navigation</summary>
 
-1. ~~[Creating a workflow](../1/README.md)~~
-1. ~~[Building code in a workflow](../2/README.md)~~
-1. ~~[Running multiple jobs in parallel](../3/README.md)~~
-1. ~~[Running jobs in sequence](../4/README.md)~~
-1. ~~[Deploying to GitHub Pages](../5/README.md)~~
+1. ~~[Creating a workflow](../001/README.md)~~
+1. ~~[Building code in a workflow](../002/README.md)~~
+1. ~~[Running multiple jobs in parallel](../003/README.md)~~
+1. ~~[Running jobs in sequence](../004/README.md)~~
+1. ~~[Deploying to GitHub Pages](../005/README.md)~~
 1. **Using other events to run workflows** (this task)
-1. [Outputs from steps and jobs](../7/README.md)
-1. [Keeping dependencies up to date with Dependabot](../8/README.md)
-1. [Matrices](../9/README.md)
-1. [Workflow dispatch inputs and security verification](../10/README.md)
-1. [Learn more about GitHub Actions](../11/README.md)
+1. [Outputs from steps and jobs](../007/README.md)
+1. [Keeping dependencies up to date with Dependabot](../008/README.md)
+1. [Matrices](../009/README.md)
+1. [Workflow dispatch inputs and security verification](../010/README.md)
+1. [Learn more about GitHub Actions](../011/README.md)
 
 
 </details>
@@ -123,4 +123,4 @@ jobs:
 > [!IMPORTANT]
 > Be sure to remove this workflow when you're done with it, as it will run every five minutes forever and that's not very sustainable 🌱
 
-The [next step](../7/README.md) is to learn about outputs from steps and jobs.
+The [next step](../007/README.md) is to learn about outputs from steps and jobs.
