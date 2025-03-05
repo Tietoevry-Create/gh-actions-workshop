@@ -66,12 +66,12 @@ The workflow picks that up and will fail the job.
 ## 2.2 Add a PR rule to keep anyone from merging if the build fails
 
 We now have a workflow that tries to build our code, but it's not very useful if we can still merge broken code.
-GitHub has a feature called "branch protection rules" that can be used to prevent merging code that doesn't pass the checks.
+GitHub has a feature called "branch protection rules"/"rulesets" that can be used to prevent merging code that doesn't pass the checks.
 Let's add a rule that prevents merging if the build fails.
 
 1. Go to the repository settings on <https://github.com/[your-username]/gh-actions-workshop/settings>
 1. Click on "Branches" in the sidebar
-1. Click on "Add branch protection rule"
+1. Click on "Add classic branch protection rule"
 1. Under "Branch name pattern", enter `main`. If you have a different default branch, use that instead.
 1. Check the "Require status checks to pass before merging" checkbox and see that the box opens up
 1. Search for the workflow you created (`build`) and select it to make it required
