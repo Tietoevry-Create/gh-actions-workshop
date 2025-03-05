@@ -3,6 +3,7 @@
 <details>
 <summary>Navigation</summary>
 
+0. ~~[Getting started](../000/README.md)~~
 1. ~~[Creating a workflow](../001/README.md)~~
 1. ~~[Building code in a workflow](../002/README.md)~~
 1. ~~[Running multiple jobs in parallel](../003/README.md)~~
@@ -14,7 +15,6 @@
 1. [Matrices](../009/README.md)
 1. [Workflow dispatch inputs and security verification](../010/README.md)
 1. [Learn more about GitHub Actions](../011/README.md)
-
 
 </details>
 
