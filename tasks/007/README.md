@@ -3,18 +3,18 @@
 <details>
 <summary>Navigation</summary>
 
-1. ~~[Creating a workflow](../1/README.md)~~
-1. ~~[Building code in a workflow](../2/README.md)~~
-1. ~~[Running multiple jobs in parallel](../3/README.md)~~
-1. ~~[Running jobs in sequence](../4/README.md)~~
-1. ~~[Deploying to GitHub Pages](../5/README.md)~~
-1. ~~[Using other events to run workflows](../6/README.md)~~
+0. ~~[Getting started](../000/README.md)~~
+1. ~~[Creating a workflow](../001/README.md)~~
+1. ~~[Building code in a workflow](../002/README.md)~~
+1. ~~[Running multiple jobs in parallel](../003/README.md)~~
+1. ~~[Running jobs in sequence](../004/README.md)~~
+1. ~~[Deploying to GitHub Pages](../005/README.md)~~
+1. ~~[Using other events to run workflows](../006/README.md)~~
 1. **Outputs from steps and jobs** (this task)
-1. [Keeping dependencies up to date with Dependabot](../8/README.md)
-1. [Matrices](../9/README.md)
-1. [Workflow dispatch inputs and security verification](../10/README.md)
-1. [Learn more about GitHub Actions](../11/README.md)
-
+1. [Keeping dependencies up to date with Dependabot](../008/README.md)
+1. [Matrices](../009/README.md)
+1. [Workflow dispatch inputs and security verification](../010/README.md)
+1. [Learn more about GitHub Actions](../011/README.md)
 
 </details>
 
@@ -104,7 +104,7 @@ jobs:
 
 Lighthouse is a tool for running audits on web pages.
 It can be used to check for accessibility issues, performance issues, SEO issues and more.
-In [task 5](../5/README.md), we deployed a website to GitHub Pages.
+In [task 5](../005/README.md), we deployed a website to GitHub Pages.
 Let's add a step that runs Lighthouse checks on the deployed site.
 
 Previously we had the following steps in our deploy job:
@@ -190,4 +190,4 @@ jobs:
 
 After running this workflow, you should be able to see the Lighthouse checks in the GitHub UI.
 
-In [the next step](../8/README.md), we'll learn about Dependabot and how to use it to keep our dependencies up to date.
+In [the next step](../008/README.md), we'll learn about Dependabot and how to use it to keep our dependencies up to date.

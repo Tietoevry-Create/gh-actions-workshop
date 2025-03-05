@@ -3,18 +3,18 @@
 <details>
 <summary>Navigation</summary>
 
+0. ~~[Getting started](../000/README.md)~~
 1. **Creating a workflow** (this task)
-1. [Building code in a workflow](../2/README.md)
-1. [Running multiple jobs in parallel](../3/README.md)
-1. [Running jobs in sequence](../4/README.md)
-1. [Deploying to GitHub Pages](../5/README.md)
-1. [Using other events to run workflows](../6/README.md)
-1. [Outputs from steps and jobs](../7/README.md)
-1. [Keeping dependencies up to date with Dependabot](../8/README.md)
-1. [Matrices](../9/README.md)
-1. [Workflow dispatch inputs and security verification](../10/README.md)
-1. [Learn more about GitHub Actions](../11/README.md)
-
+1. [Building code in a workflow](../002/README.md)
+1. [Running multiple jobs in parallel](../003/README.md)
+1. [Running jobs in sequence](../004/README.md)
+1. [Deploying to GitHub Pages](../005/README.md)
+1. [Using other events to run workflows](../006/README.md)
+1. [Outputs from steps and jobs](../007/README.md)
+1. [Keeping dependencies up to date with Dependabot](../008/README.md)
+1. [Matrices](../009/README.md)
+1. [Workflow dispatch inputs and security verification](../010/README.md)
+1. [Learn more about GitHub Actions](../011/README.md)
 
 </details>
 
@@ -84,4 +84,4 @@ They have a `name`, one or more triggers (`on`) and `jobs` which will run when t
 
 Great work!
 You've now created your first workflow 🎉
-Let's do something a little more productive in [the next task](../2/README.md).
+Let's do something a little more productive in [the next task](../002/README.md).

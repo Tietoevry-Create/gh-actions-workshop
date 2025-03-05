@@ -3,18 +3,18 @@
 <details>
 <summary>Navigation</summary>
 
-1. ~~[Creating a workflow](../1/README.md)~~
+0. ~~[Getting started](../000/README.md)~~
+1. ~~[Creating a workflow](../001/README.md)~~
 1. **Building code in a workflow** (this task)
-1. [Running multiple jobs in parallel](../3/README.md)
-1. [Running jobs in sequence](../4/README.md)
-1. [Deploying to GitHub Pages](../5/README.md)
-1. [Using other events to run workflows](../6/README.md)
-1. [Outputs from steps and jobs](../7/README.md)
-1. [Keeping dependencies up to date with Dependabot](../8/README.md)
-1. [Matrices](../9/README.md)
-1. [Workflow dispatch inputs and security verification](../10/README.md)
-1. [Learn more about GitHub Actions](../11/README.md)
-
+1. [Running multiple jobs in parallel](../003/README.md)
+1. [Running jobs in sequence](../004/README.md)
+1. [Deploying to GitHub Pages](../005/README.md)
+1. [Using other events to run workflows](../006/README.md)
+1. [Outputs from steps and jobs](../007/README.md)
+1. [Keeping dependencies up to date with Dependabot](../008/README.md)
+1. [Matrices](../009/README.md)
+1. [Workflow dispatch inputs and security verification](../010/README.md)
+1. [Learn more about GitHub Actions](../011/README.md)
 
 </details>
 
@@ -66,12 +66,12 @@ The workflow picks that up and will fail the job.
 ## 2.2 Add a PR rule to keep anyone from merging if the build fails
 
 We now have a workflow that tries to build our code, but it's not very useful if we can still merge broken code.
-GitHub has a feature called "branch protection rules" that can be used to prevent merging code that doesn't pass the checks.
+GitHub has a feature called "branch protection rules"/"rulesets" that can be used to prevent merging code that doesn't pass the checks.
 Let's add a rule that prevents merging if the build fails.
 
 1. Go to the repository settings on <https://github.com/[your-username]/gh-actions-workshop/settings>
 1. Click on "Branches" in the sidebar
-1. Click on "Add branch protection rule"
+1. Click on "Add classic branch protection rule"
 1. Under "Branch name pattern", enter `main`. If you have a different default branch, use that instead.
 1. Check the "Require status checks to pass before merging" checkbox and see that the box opens up
 1. Search for the workflow you created (`build`) and select it to make it required
@@ -92,8 +92,8 @@ Other settings I usually add to my branch protection rules are:
 
 ## 2.3 Fix the error in the code
 
-Go to the [`src/index.tsx`](../../src/index.tsx) file and fix the error.
+Go to the [`src/index.tsx`](../00../src/index.tsx) file and fix the error.
 There might be a line at the top that looks suspiciously wrongful.
 Commit the change and see that the workflow now runs successfully 🤩
 
-Ok nice, now the project builds! Let's move on to [task 3](../3/README.md) to run our tests.
+Ok nice, now the project builds! Let's move on to [task 3](../003/README.md) to run our tests.

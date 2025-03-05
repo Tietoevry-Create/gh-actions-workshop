@@ -3,18 +3,18 @@
 <details>
 <summary>Navigation</summary>
 
-1. ~~[Creating a workflow](../1/README.md)~~
-1. ~~[Building code in a workflow](../2/README.md)~~
-1. ~~[Running multiple jobs in parallel](../3/README.md)~~
-1. ~~[Running jobs in sequence](../4/README.md)~~
-1. ~~[Deploying to GitHub Pages](../5/README.md)~~
-1. ~~[Using other events to run workflows](../6/README.md)~~
-1. ~~[Outputs from steps and jobs](../7/README.md)~~
-1. ~~[Keeping dependencies up to date with Dependabot](../8/README.md)~~
+0. ~~[Getting started](../000/README.md)~~
+1. ~~[Creating a workflow](../001/README.md)~~
+1. ~~[Building code in a workflow](../002/README.md)~~
+1. ~~[Running multiple jobs in parallel](../003/README.md)~~
+1. ~~[Running jobs in sequence](../004/README.md)~~
+1. ~~[Deploying to GitHub Pages](../005/README.md)~~
+1. ~~[Using other events to run workflows](../006/README.md)~~
+1. ~~[Outputs from steps and jobs](../007/README.md)~~
+1. ~~[Keeping dependencies up to date with Dependabot](../008/README.md)~~
 1. **Matrices** (this task)
-1. [Workflow dispatch inputs and security verification](../10/README.md)
-1. [Learn more about GitHub Actions](../11/README.md)
-
+1. [Workflow dispatch inputs and security verification](../010/README.md)
+1. [Learn more about GitHub Actions](../011/README.md)
 
 </details>
 
