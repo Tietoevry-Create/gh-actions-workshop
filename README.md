@@ -19,7 +19,7 @@ The workshop consists of eight main tasks:
 1. [Using other events to run workflows](./tasks/6/README.md)
 1. [Outputting data from steps and jobs](./tasks/7/README.md)
 1. [Keeping dependencies up to date with Dependabot](./tasks/8/README.md)
-1. [Matrices](../9/README.md)
+1. [Matrices](./tasks/9/README.md)
 1. [Workflow dispatch inputs and security verification](./tasks/10/README.md)
 
 If you already have some experience with GitHub Actions, feel free to skip ahead to the task you're interested in.
