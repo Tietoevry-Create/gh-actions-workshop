@@ -77,8 +77,11 @@ These can all be run with **`npm run <script name>`**:
 }
 ```
 
-Create one job for the test script and one for the `lint:check` script.
-Remember: To run the scripts, type `npm run <script name>`.
+In the workflow file we've already created, create **one job for the test script** and **one for the `lint:check` script**.
+
+> [!TIP]
+> Remember: To run the scripts, type `npm run <script name>` (if you already have [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) installed).
+
 Now if we commit and see how the workflow runs, we can see that all jobs are run at the same time.
 
 > [!TIP]
