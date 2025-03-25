@@ -88,3 +88,5 @@ jobs:
 In this example, we have 3 different operating systems and 2 different versions of Node.js.
 The job will in total be run 6 times, once for each combination of operating system and Node.js version.
 To verify this, try to run it and see how many jobs are created in the Actions tab.
+
+The [next task](../010/README.md) will let you create Workflow dispatch inputs, and try out security verification.
