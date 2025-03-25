@@ -70,5 +70,3 @@ What you haven't yet learned is how to…
 - learn about security practices
 
 You can find some of these topics introduced in the [next task for advanced experiments](../009/README.md).
-This workshop might be expanded in the future to include these topics, but for now you'll have to learn them on your own.
-I believe in you 🕊️
