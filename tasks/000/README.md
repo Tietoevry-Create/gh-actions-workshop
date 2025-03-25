@@ -38,4 +38,4 @@
 3. Open your repository on <https://github.dev/[your-username]/gh-actions-workshop>
 
 Now you're ready to go!
-Please proceed to [task 1](tasks/1/README.md).
+Please proceed to [task 1](tasks/001/README.md).
