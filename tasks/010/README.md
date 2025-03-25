@@ -188,3 +188,4 @@ steps:
 ```
 
 You'll notice that also zizmor is happy now.
+In the [next task](../011/README.md), you will get some tips on topics for further reading!
