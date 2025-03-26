@@ -28,6 +28,9 @@ GitHub will check the `.github` directory, and if there's a `dependabot.yml` fil
 Let's create a new file called `.github/dependabot.yml` and enable Dependabot for our repository.
 As we have both Node and GitHub Actions code in our repo, we should keep both of them up to date.
 
+> [!NOTE]
+> The file must be named `dependabot.yml` and be in the `.github` directory, i.e. not in the `.github/workflows` directory where we've placed our workflow files.
+
 ```yaml
 version: 2 # The version of the Dependabot config file format. Currently only v2 is supported, and the file _must_ start with `version: 2`.
 

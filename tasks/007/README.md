@@ -66,7 +66,7 @@ steps:
       echo "EOF" >> $GITHUB_OUTPUT
 ```
 
-You might have noticed it by now, but using camel-casing is the recommended way to name outputs, ids and just about anything when working with GitHub Actions.
+You might have noticed it by now, but using kebab-casing is the recommended way to name outputs, ids and just about anything when working with GitHub Actions.
 
 ## Job outputs
 

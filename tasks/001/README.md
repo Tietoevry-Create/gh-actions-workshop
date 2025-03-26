@@ -26,6 +26,9 @@ This will help you get familiar with the basic structure of a workflow file.
 Workflow files reside within the `.github/workflows` directory.
 They have a `name`, one or more triggers (`on`) and `jobs` which will run when the event triggers.
 
+> [!WARN]
+> The workflow directory **must** be `.github/workflows` for GitHub Actions to recognize it.
+
 ## Goals
 
 - Create a new workflow

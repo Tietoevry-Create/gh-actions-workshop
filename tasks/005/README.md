@@ -60,5 +60,5 @@ We need to set a few permissions to be able to read the repository and deploy to
      uses: actions/deploy-pages@v4
    ```
 
-After running this workflow (on the `main` branch), you should be able to see the webpage on <https://[your-username].github.io/gh-actions-workshop> 😍
+After running this workflow (on the `main` branch), you should be able to see the webpage on <https://[your-username].github.io/[your-repository-name]> 😍
 Now let's learn about other events in [task 6](../006/README.md)!

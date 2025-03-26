@@ -60,6 +60,10 @@ They often can be run entire independently of each other, therefore making them 
 > Each job has its own fresh virtual machine, so they don't share any state.
 > This means that you need to check out the repository and install dependencies for each job, even if they're within the same workflow file.
 
+> [!NOTE]
+> You can create as many jobs as you want, but remember that we usually have a limit of running time per month (typically 2000 minutes).
+> Also, from an environmental perspective, running more jobs will consume more resources.
+
 ## 3.1 Test and lint
 
 In the previous task, we learned how to build the project.
