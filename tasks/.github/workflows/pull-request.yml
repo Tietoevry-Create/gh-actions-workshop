@@ -1,0 +1,29 @@
+# Workflow names are optional, but should be provided.
+# They are displayed on GitHub when the action is run.
+name: Hello world ✨
+
+# The `on` property configures the events that will trigger the workflow.
+# In our case we want it to run when the `pull_request` event is triggered.
+# In short, that means that the workflow will run when a pull request is
+# either opened or updated (but not renamed or labeled – code needs to
+# be changed).
+on:
+  - pull_request
+
+# Jobs are what actually do the work. We can add as many jobs as we want.
+# These will be run in parallel.
+jobs:
+  hello_world_job:
+    # As with workflow names (and even step names), job names are not
+    # strictly required, but they are good practice.
+    name: Hello world 🌱
+
+    # There are many virtual machines we can run our jobs on. The most
+    # common one is `ubuntu-latest`. See this page for a full list of
+    # officially supported runners: https://github.com/actions/runner-images
+    runs-on: ubuntu-latest
+
+    # Each job can have multiple steps. These will be run in sequence.
+    steps:
+      - name: Print message to terminal
+        run: echo "Hello 🌏!"
